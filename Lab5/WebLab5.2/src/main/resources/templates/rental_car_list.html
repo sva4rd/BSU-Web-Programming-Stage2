@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<link rel="stylesheet" type="text/css" href="../../static/css/style.css" th:href="@{/css/style.css}"/>
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental App</title>
+
+</head>
+<body>
+<p class="back-ref">
+    <a href="home.html" th:href="@{/}">Back</a>
+</p>
+<div class="main-container">
+    <div class="menu-container">
+        <h1>List of Cars</h1>
+        <ul class="list-container">
+            <li th:each="car : ${clientCarList}" class="list-item">
+                <span th:text="${car.manufacturer + ' ' + car.model}"></span>
+                <span th:text="${'ID: ' + car.getID() + ' - ' + 'State: ' + car.getState()}"></span>
+            </li>
+        </ul>
+
+        <div th:if="${#lists.isEmpty(clientCarList)}" class="err-message">
+            <p>Error: no cars found</p>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="form-border">
+            <form action="/CarRentalApp/release_proc" method="POST" class="request-container">
+                <div class="input-container">
+                    <h2>Release Car</h2>
+                    <input name="relCarId" type="number" id="releaseCarId" min="1" placeholder="Car ID" th:disabled="${emptyClientCarList}">
+                </div>
+                <input type="submit" class="submit-button" value="Submit" th:disabled="${emptyClientCarList}">
+                <p id="releaseResult" th:text="${releaseResult}"></p>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

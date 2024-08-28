@@ -1,0 +1,1566 @@
+2023-11-08 15:40:31,904 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.getClientById(ClientDAO.java:48) ~[classes/:?]
+	at controller.ClientController.setClient(ClientController.java:27) [classes/:?]
+	at view.Main.setControllerClient(Main.java:119) [classes/:?]
+	at view.Main.main(Main.java:128) [classes/:?]
+2023-11-08 15:40:31,921 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:35) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 15:40:31,923 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 15:41:06,132 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)")
+jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)")
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getDetailedException(QueryImpl.java:392) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:265) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:531) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.getClientById(ClientDAO.java:48) ~[classes/:?]
+	at controller.ClientController.setClient(ClientController.java:27) [classes/:?]
+	at view.Main.setControllerClient(Main.java:119) [classes/:?]
+	at view.Main.main(Main.java:128) [classes/:?]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)")
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:343) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:702) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.selectOneRow(DatasourceCallQueryMechanism.java:813) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRowFromTable(ExpressionQueryMechanism.java:2912) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRow(ExpressionQueryMechanism.java:2865) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.executeObjectLevelReadQuery(ReadObjectQuery.java:563) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeDatabaseQuery(ObjectLevelReadQuery.java:1236) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.execute(ObjectLevelReadQuery.java:1195) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.execute(ReadObjectQuery.java:448) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeInUnitOfWork(ObjectLevelReadQuery.java:1283) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1009) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeSelect(DatabaseAccessor.java:1026) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:662) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.selectOneRow(DatasourceCallQueryMechanism.java:813) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRowFromTable(ExpressionQueryMechanism.java:2912) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRow(ExpressionQueryMechanism.java:2865) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.executeObjectLevelReadQuery(ReadObjectQuery.java:563) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeDatabaseQuery(ObjectLevelReadQuery.java:1236) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.execute(ObjectLevelReadQuery.java:1195) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.execute(ReadObjectQuery.java:448) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeInUnitOfWork(ObjectLevelReadQuery.java:1283) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+2023-11-08 15:45:45,475 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.getClientById(ClientDAO.java:48) ~[classes/:?]
+	at controller.ClientController.setClient(ClientController.java:27) [classes/:?]
+	at view.Main.setControllerClient(Main.java:119) [classes/:?]
+	at view.Main.main(Main.java:128) [classes/:?]
+2023-11-08 15:45:45,485 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:35) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 15:45:45,488 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 15:51:01,982 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)")
+jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)")
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getDetailedException(QueryImpl.java:392) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:265) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:531) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.getClientById(ClientDAO.java:48) ~[classes/:?]
+	at controller.ClientController.setClient(ClientController.java:27) [classes/:?]
+	at view.Main.setControllerClient(Main.java:119) [classes/:?]
+	at view.Main.main(Main.java:128) [classes/:?]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)")
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:343) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:702) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.selectOneRow(DatasourceCallQueryMechanism.java:813) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRowFromTable(ExpressionQueryMechanism.java:2912) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRow(ExpressionQueryMechanism.java:2865) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.executeObjectLevelReadQuery(ReadObjectQuery.java:563) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeDatabaseQuery(ObjectLevelReadQuery.java:1236) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.execute(ObjectLevelReadQuery.java:1195) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.execute(ReadObjectQuery.java:448) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeInUnitOfWork(ObjectLevelReadQuery.java:1283) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1009) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeSelect(DatabaseAccessor.java:1026) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:662) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.selectOneRow(DatasourceCallQueryMechanism.java:813) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRowFromTable(ExpressionQueryMechanism.java:2912) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRow(ExpressionQueryMechanism.java:2865) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.executeObjectLevelReadQuery(ReadObjectQuery.java:563) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeDatabaseQuery(ObjectLevelReadQuery.java:1236) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.execute(ObjectLevelReadQuery.java:1195) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.execute(ReadObjectQuery.java:448) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeInUnitOfWork(ObjectLevelReadQuery.java:1283) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+2023-11-08 15:57:57,920 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)")
+jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)")
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getDetailedException(QueryImpl.java:392) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:265) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:531) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.getClientById(ClientDAO.java:48) ~[classes/:?]
+	at controller.ClientController.setClient(ClientController.java:27) [classes/:?]
+	at view.Main.setControllerClient(Main.java:119) [classes/:?]
+	at view.Main.main(Main.java:128) [classes/:?]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPORTDATA FROM client WHERE (PASSPORTDATA = ?)")
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:343) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:702) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.selectOneRow(DatasourceCallQueryMechanism.java:813) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRowFromTable(ExpressionQueryMechanism.java:2912) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRow(ExpressionQueryMechanism.java:2865) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.executeObjectLevelReadQuery(ReadObjectQuery.java:563) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeDatabaseQuery(ObjectLevelReadQuery.java:1236) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.execute(ObjectLevelReadQuery.java:1195) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.execute(ReadObjectQuery.java:448) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeInUnitOfWork(ObjectLevelReadQuery.java:1283) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1009) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeSelect(DatabaseAccessor.java:1026) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:662) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.selectOneRow(DatasourceCallQueryMechanism.java:813) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRowFromTable(ExpressionQueryMechanism.java:2912) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRow(ExpressionQueryMechanism.java:2865) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.executeObjectLevelReadQuery(ReadObjectQuery.java:563) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeDatabaseQuery(ObjectLevelReadQuery.java:1236) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.execute(ObjectLevelReadQuery.java:1195) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.execute(ReadObjectQuery.java:448) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeInUnitOfWork(ObjectLevelReadQuery.java:1283) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+2023-11-08 15:58:36,752 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: INSERT INTO client (PASSPORTDATA) VALUES (?)
+	bind => [1 parameter bound]
+Query: InsertObjectQuery(Passport data: МР4091235)
+jakarta.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: INSERT INTO client (PASSPORTDATA) VALUES (?)
+	bind => [1 parameter bound]
+Query: InsertObjectQuery(Passport data: МР4091235)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:162) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.insertClient(ClientDAO.java:73) ~[classes/:?]
+	at model.Client.<init>(Client.java:41) ~[classes/:?]
+	at controller.ClientController.setClient(ClientController.java:25) [classes/:?]
+	at view.Main.setControllerClient(Main.java:119) [classes/:?]
+	at view.Main.main(Main.java:128) [classes/:?]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+Error Code: 1054
+Call: INSERT INTO client (PASSPORTDATA) VALUES (?)
+	bind => [1 parameter bound]
+Query: InsertObjectQuery(Passport data: МР4091235)
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:334) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:919) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:981) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:642) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:311) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:436) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:193) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:209) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:514) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:97) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:326) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:61) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:109) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1773) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:248) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:147) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4335) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1507) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1597) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:287) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1234) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:137) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 5 more
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPORTDATA' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1098) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1046) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1371) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1031) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:909) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:981) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:642) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:311) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:436) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:193) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:209) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:514) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:97) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:326) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:61) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:109) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1773) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:248) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:147) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4335) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1507) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1597) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:287) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1234) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:137) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 5 more
+2023-11-08 16:03:54,894 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPOR_DATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPOR_DATA FROM client WHERE (PASSPOR_DATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPOR_DATA FROM client WHERE (PASSPOR_DATA = ?)")
+jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPOR_DATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPOR_DATA FROM client WHERE (PASSPOR_DATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPOR_DATA FROM client WHERE (PASSPOR_DATA = ?)")
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getDetailedException(QueryImpl.java:392) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:265) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:531) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.getClientById(ClientDAO.java:48) ~[classes/:?]
+	at controller.ClientController.setClient(ClientController.java:27) [classes/:?]
+	at view.Main.setControllerClient(Main.java:119) [classes/:?]
+	at view.Main.main(Main.java:128) [classes/:?]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPOR_DATA' in 'field list'
+Error Code: 1054
+Call: SELECT PASSPOR_DATA FROM client WHERE (PASSPOR_DATA = ?)
+	bind => [1 parameter bound]
+Query: ReadObjectQuery(name="getClientById" referenceClass=Client sql="SELECT PASSPOR_DATA FROM client WHERE (PASSPOR_DATA = ?)")
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:343) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:702) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.selectOneRow(DatasourceCallQueryMechanism.java:813) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRowFromTable(ExpressionQueryMechanism.java:2912) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRow(ExpressionQueryMechanism.java:2865) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.executeObjectLevelReadQuery(ReadObjectQuery.java:563) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeDatabaseQuery(ObjectLevelReadQuery.java:1236) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.execute(ObjectLevelReadQuery.java:1195) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.execute(ReadObjectQuery.java:448) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeInUnitOfWork(ObjectLevelReadQuery.java:1283) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'PASSPOR_DATA' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1009) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeSelect(DatabaseAccessor.java:1026) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:662) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.selectOneRow(DatasourceCallQueryMechanism.java:813) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRowFromTable(ExpressionQueryMechanism.java:2912) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.ExpressionQueryMechanism.selectOneRow(ExpressionQueryMechanism.java:2865) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.executeObjectLevelReadQuery(ReadObjectQuery.java:563) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeDatabaseQuery(ObjectLevelReadQuery.java:1236) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.execute(ObjectLevelReadQuery.java:1195) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ReadObjectQuery.execute(ReadObjectQuery.java:448) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelReadQuery.executeInUnitOfWork(ObjectLevelReadQuery.java:1283) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+2023-11-08 16:05:30,346 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order (id_request) VALUES (1)' at line 1
+Error Code: 1064
+Call: INSERT INTO order (id_request) VALUES (?)
+	bind => [1 parameter bound]
+Query: InsertObjectQuery(ID: 0
+Request ID: 1)
+jakarta.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order (id_request) VALUES (1)' at line 1
+Error Code: 1064
+Call: INSERT INTO order (id_request) VALUES (?)
+	bind => [1 parameter bound]
+Query: InsertObjectQuery(ID: 0
+Request ID: 1)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:162) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.OrderDAO.insertOrder(OrderDAO.java:73) ~[classes/:?]
+	at model.Order.<init>(Order.java:32) ~[classes/:?]
+	at controller.Admin.processRequest(Admin.java:36) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:35) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order (id_request) VALUES (1)' at line 1
+Error Code: 1064
+Call: INSERT INTO order (id_request) VALUES (?)
+	bind => [1 parameter bound]
+Query: InsertObjectQuery(ID: 0
+Request ID: 1)
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:334) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:919) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:981) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:642) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:311) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:436) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:193) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:209) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:514) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:97) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:326) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:61) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:109) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1773) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:248) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:147) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4335) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1507) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1597) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:287) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1234) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:137) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order (id_request) VALUES (1)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1098) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1046) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1371) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1031) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:909) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:981) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:642) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:311) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:436) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:193) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:209) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:514) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:97) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:326) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:61) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:109) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1773) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:248) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:147) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4335) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1507) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1597) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:287) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1234) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:137) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+2023-11-08 16:05:30,364 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 16:05:30,366 ERROR l.JPALogger [main] modelDAO.DAOException: java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:941) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:583) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:69) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.BillDAO.getBillsByClientId(BillDAO.java:99) ~[classes/:?]
+	at model.Client.getBills(Client.java:71) ~[classes/:?]
+	at controller.ClientController.getClientBills(ClientController.java:81) [classes/:?]
+	at view.Main.payBillsShow(Main.java:57) [classes/:?]
+	at view.Main.main(Main.java:134) [classes/:?]
+2023-11-08 16:05:30,394 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: No parameter named 'clientID'
+Error Code: 0
+Call: { CALL GetCarsForClient(?) }
+	bind => [1 parameter bound]
+Query: ResultSetMappingQuery(name="GetCarsForClient" )
+jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: No parameter named 'clientID'
+Error Code: 0
+Call: { CALL GetCarsForClient(?) }
+	bind => [1 parameter bound]
+Query: ResultSetMappingQuery(name="GetCarsForClient" )
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getDetailedException(QueryImpl.java:392) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:265) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.execute(StoredProcedureQueryImpl.java:315) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:560) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:123) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:54) ~[classes/:?]
+	at controller.ClientController.getClientCars(ClientController.java:37) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:82) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLException: No parameter named 'clientID'
+Error Code: 0
+Call: { CALL GetCarsForClient(?) }
+	bind => [1 parameter bound]
+Query: ResultSetMappingQuery(name="GetCarsForClient" )
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:343) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:702) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.execute(DatasourceCallQueryMechanism.java:258) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.executeDatabaseQuery(ResultSetMappingQuery.java:317) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 7 more
+Caused by: java.sql.SQLException: No parameter named 'clientID'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.CallableStatement.getNamedParamIndex(CallableStatement.java:1332) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.CallableStatement.setString(CallableStatement.java:2130) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at org.eclipse.persistence.internal.databaseaccess.DatabasePlatform.setParameterValueInDatabaseCall(DatabasePlatform.java:2485) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.StoredProcedureCall.prepareStatement(StoredProcedureCall.java:900) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:630) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.execute(DatasourceCallQueryMechanism.java:258) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.executeDatabaseQuery(ResultSetMappingQuery.java:317) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 7 more
+2023-11-08 16:23:12,076 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order (id_request) VALUES (1)' at line 1
+Error Code: 1064
+Call: INSERT INTO order (id_request) VALUES (?)
+	bind => [1 parameter bound]
+Query: InsertObjectQuery(ID: 0
+Request ID: 1)
+jakarta.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order (id_request) VALUES (1)' at line 1
+Error Code: 1064
+Call: INSERT INTO order (id_request) VALUES (?)
+	bind => [1 parameter bound]
+Query: InsertObjectQuery(ID: 0
+Request ID: 1)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:162) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.OrderDAO.insertOrder(OrderDAO.java:73) ~[classes/:?]
+	at model.Order.<init>(Order.java:32) ~[classes/:?]
+	at controller.Admin.processRequest(Admin.java:36) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:35) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order (id_request) VALUES (1)' at line 1
+Error Code: 1064
+Call: INSERT INTO order (id_request) VALUES (?)
+	bind => [1 parameter bound]
+Query: InsertObjectQuery(ID: 0
+Request ID: 1)
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:334) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:919) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:981) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:642) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:311) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:436) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:193) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:209) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:514) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:97) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:326) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:61) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:109) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1773) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:248) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:147) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4335) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1507) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1597) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:287) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1234) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:137) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order (id_request) VALUES (1)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1098) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1046) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1371) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1031) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:909) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:981) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:642) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:311) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:436) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:193) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:209) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:514) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:97) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:326) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:61) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:109) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:86) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1773) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:248) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:147) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4335) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1507) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1597) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:287) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1234) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:137) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+2023-11-08 16:34:04,529 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 16:34:04,536 ERROR l.JPALogger [main] modelDAO.DAOException: java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:941) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:583) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:69) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.BillDAO.getBillsByClientId(BillDAO.java:99) ~[classes/:?]
+	at model.Client.getBills(Client.java:71) ~[classes/:?]
+	at controller.ClientController.getClientBills(ClientController.java:81) [classes/:?]
+	at view.Main.payBillsShow(Main.java:57) [classes/:?]
+	at view.Main.main(Main.java:134) [classes/:?]
+2023-11-08 16:34:11,505 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.getClientById(ClientDAO.java:48) ~[classes/:?]
+	at controller.ClientController.setClient(ClientController.java:27) [classes/:?]
+	at view.Main.setControllerClient(Main.java:119) [classes/:?]
+	at view.Main.main(Main.java:128) [classes/:?]
+2023-11-08 16:34:11,516 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:35) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 16:34:11,517 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 16:43:56,895 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 16:43:56,905 ERROR l.JPALogger [main] modelDAO.DAOException: java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:941) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:583) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:69) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.BillDAO.getBillsByClientId(BillDAO.java:99) ~[classes/:?]
+	at model.Client.getBills(Client.java:71) ~[classes/:?]
+	at controller.ClientController.getClientBills(ClientController.java:81) [classes/:?]
+	at view.Main.payBillsShow(Main.java:57) [classes/:?]
+	at view.Main.main(Main.java:134) [classes/:?]
+2023-11-08 16:43:56,951 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: No parameter named 'clientID'
+Error Code: 0
+Call: { CALL GetCarsForClient(?) }
+	bind => [1 parameter bound]
+Query: ResultSetMappingQuery(name="GetCarsForClient" )
+jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: No parameter named 'clientID'
+Error Code: 0
+Call: { CALL GetCarsForClient(?) }
+	bind => [1 parameter bound]
+Query: ResultSetMappingQuery(name="GetCarsForClient" )
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getDetailedException(QueryImpl.java:392) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:265) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.execute(StoredProcedureQueryImpl.java:315) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:560) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:123) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:54) ~[classes/:?]
+	at controller.ClientController.getClientCars(ClientController.java:37) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:82) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLException: No parameter named 'clientID'
+Error Code: 0
+Call: { CALL GetCarsForClient(?) }
+	bind => [1 parameter bound]
+Query: ResultSetMappingQuery(name="GetCarsForClient" )
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:343) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:702) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.execute(DatasourceCallQueryMechanism.java:258) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.executeDatabaseQuery(ResultSetMappingQuery.java:317) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 7 more
+Caused by: java.sql.SQLException: No parameter named 'clientID'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.CallableStatement.getNamedParamIndex(CallableStatement.java:1332) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.CallableStatement.setString(CallableStatement.java:2130) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at org.eclipse.persistence.internal.databaseaccess.DatabasePlatform.setParameterValueInDatabaseCall(DatabasePlatform.java:2485) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.StoredProcedureCall.prepareStatement(StoredProcedureCall.java:900) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:630) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.execute(DatasourceCallQueryMechanism.java:258) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.executeDatabaseQuery(ResultSetMappingQuery.java:317) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 7 more
+2023-11-08 16:48:55,598 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 16:48:55,606 ERROR l.JPALogger [main] modelDAO.DAOException: java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:941) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:583) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:69) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.BillDAO.getBillsByClientId(BillDAO.java:99) ~[classes/:?]
+	at model.Client.getBills(Client.java:71) ~[classes/:?]
+	at controller.ClientController.getClientBills(ClientController.java:81) [classes/:?]
+	at view.Main.payBillsShow(Main.java:57) [classes/:?]
+	at view.Main.main(Main.java:134) [classes/:?]
+2023-11-08 16:48:55,644 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: No parameter named 'clientID'
+Error Code: 0
+Call: { CALL GetCarsForClient(?) }
+	bind => [1 parameter bound]
+Query: ResultSetMappingQuery(name="GetCarsForClient" )
+jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: No parameter named 'clientID'
+Error Code: 0
+Call: { CALL GetCarsForClient(?) }
+	bind => [1 parameter bound]
+Query: ResultSetMappingQuery(name="GetCarsForClient" )
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getDetailedException(QueryImpl.java:392) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:265) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.execute(StoredProcedureQueryImpl.java:315) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:560) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:123) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:54) ~[classes/:?]
+	at controller.ClientController.getClientCars(ClientController.java:37) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:82) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+Caused by: org.eclipse.persistence.exceptions.DatabaseException: 
+Internal Exception: java.sql.SQLException: No parameter named 'clientID'
+Error Code: 0
+Call: { CALL GetCarsForClient(?) }
+	bind => [1 parameter bound]
+Query: ResultSetMappingQuery(name="GetCarsForClient" )
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:343) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:702) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.execute(DatasourceCallQueryMechanism.java:258) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.executeDatabaseQuery(ResultSetMappingQuery.java:317) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 7 more
+Caused by: java.sql.SQLException: No parameter named 'clientID'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.CallableStatement.getNamedParamIndex(CallableStatement.java:1332) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.CallableStatement.setString(CallableStatement.java:2130) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at org.eclipse.persistence.internal.databaseaccess.DatabasePlatform.setParameterValueInDatabaseCall(DatabasePlatform.java:2485) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.StoredProcedureCall.prepareStatement(StoredProcedureCall.java:900) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:630) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:569) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2048) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:611) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:280) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:266) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.execute(DatasourceCallQueryMechanism.java:258) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.executeDatabaseQuery(ResultSetMappingQuery.java:317) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:913) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:812) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:3008) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1841) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1823) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1788) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeReadQuery(QueryImpl.java:263) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 7 more
+2023-11-08 16:56:57,459 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-08 16:56:57,471 ERROR l.JPALogger [main] modelDAO.DAOException: java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:941) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:583) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:69) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.BillDAO.getBillsByClientId(BillDAO.java:99) ~[classes/:?]
+	at model.Client.getBills(Client.java:71) ~[classes/:?]
+	at controller.ClientController.getClientBills(ClientController.java:81) [classes/:?]
+	at view.Main.payBillsShow(Main.java:57) [classes/:?]
+	at view.Main.main(Main.java:134) [classes/:?]
+2023-11-08 16:56:57,508 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:54) ~[classes/:?]
+	at controller.ClientController.getClientCars(ClientController.java:37) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:82) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+2023-11-08 17:03:11,875 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:03:11,885 ERROR l.JPALogger [main] modelDAO.DAOException: java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:941) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:583) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:69) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.BillDAO.getBillsByClientId(BillDAO.java:99) ~[classes/:?]
+	at model.Client.getBills(Client.java:71) ~[classes/:?]
+	at controller.ClientController.getClientBills(ClientController.java:81) [classes/:?]
+	at view.Main.payBillsShow(Main.java:59) [classes/:?]
+	at view.Main.main(Main.java:135) [classes/:?]
+2023-11-08 17:03:11,911 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:54) ~[classes/:?]
+	at controller.ClientController.getClientCars(ClientController.java:37) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:84) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 17:05:14,476 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:05:14,487 ERROR l.JPALogger [main] modelDAO.DAOException: java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:941) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:583) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:69) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.BillDAO.getBillsByClientId(BillDAO.java:99) ~[classes/:?]
+	at model.Client.getBills(Client.java:71) ~[classes/:?]
+	at controller.ClientController.getClientBills(ClientController.java:81) [classes/:?]
+	at view.Main.payBillsShow(Main.java:59) [classes/:?]
+	at view.Main.main(Main.java:135) [classes/:?]
+2023-11-08 17:05:14,518 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:54) ~[classes/:?]
+	at controller.ClientController.getClientCars(ClientController.java:37) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:84) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 17:06:02,017 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:06:02,024 ERROR l.JPALogger [main] modelDAO.DAOException: java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:941) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:583) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:69) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.BillDAO.getBillsByClientId(BillDAO.java:99) ~[classes/:?]
+	at model.Client.getBills(Client.java:71) ~[classes/:?]
+	at controller.ClientController.getClientBills(ClientController.java:81) [classes/:?]
+	at view.Main.payBillsShow(Main.java:59) [classes/:?]
+	at view.Main.main(Main.java:135) [classes/:?]
+2023-11-08 17:06:02,060 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:54) ~[classes/:?]
+	at controller.ClientController.getClientCars(ClientController.java:37) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:84) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 17:07:23,512 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:07:38,634 ERROR l.JPALogger [main] modelDAO.DAOException: java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:941) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:583) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:69) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.BillDAO.getBillsByClientId(BillDAO.java:99) ~[classes/:?]
+	at model.Client.getBills(Client.java:71) ~[classes/:?]
+	at controller.ClientController.getClientBills(ClientController.java:81) [classes/:?]
+	at view.Main.payBillsShow(Main.java:59) [classes/:?]
+	at view.Main.main(Main.java:135) [classes/:?]
+2023-11-08 17:08:58,206 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:11:35,781 ERROR l.JPALogger [main] modelDAO.DAOException: java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+java.lang.IllegalArgumentException: You have attempted to set a value of type class java.lang.String for parameter id_client with expected type of class model.Client from query string SELECT b FROM Bill b WHERE b.client = :id_client AND b.is_paid = false.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.setParameterInternal(QueryImpl.java:941) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:583) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.setParameter(EJBQueryImpl.java:69) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.BillDAO.getBillsByClientId(BillDAO.java:99) ~[classes/:?]
+	at model.Client.getBills(Client.java:71) ~[classes/:?]
+	at controller.ClientController.getClientBills(ClientController.java:81) [classes/:?]
+	at view.Main.payBillsShow(Main.java:59) [classes/:?]
+	at view.Main.main(Main.java:135) [classes/:?]
+2023-11-08 17:12:36,741 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:12:36,803 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+jakarta.persistence.PersistenceException: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:603) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:561) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.payBill(ClientDAO.java:99) ~[classes/:?]
+	at model.Client.payBill(Client.java:79) ~[classes/:?]
+	at controller.ClientController.payClientBill(ClientController.java:91) [classes/:?]
+	at view.Main.payBillsShow(Main.java:66) [classes/:?]
+	at view.Main.main(Main.java:135) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+	at org.eclipse.persistence.queries.EntityResult.getValueFromRecord(EntityResult.java:162) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.buildObjectsFromRecords(ResultSetMappingQuery.java:269) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.buildObjectsFromRecords(ResultSetMappingQuery.java:238) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:587) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+2023-11-08 17:12:36,979 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.TransactionRequiredException: 
+Exception Description: No transaction is currently active
+jakarta.persistence.TransactionRequiredException: 
+Exception Description: No transaction is currently active
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionWrapper.throwCheckTransactionFailedException(EntityTransactionWrapper.java:93) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionWrapper.checkForTransaction(EntityTransactionWrapper.java:53) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.checkForTransaction(EntityManagerImpl.java:2170) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeUpdate(QueryImpl.java:296) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.releaseCarById(CarDAO.java:146) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:103) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 17:19:21,713 ERROR l.JPALogger [main] java.lang.IllegalArgumentException: No available cars for the requested model
+2023-11-08 17:19:35,114 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:20:42,325 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+jakarta.persistence.PersistenceException: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:603) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:561) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.payBill(ClientDAO.java:99) ~[classes/:?]
+	at model.Client.payBill(Client.java:79) ~[classes/:?]
+	at controller.ClientController.payClientBill(ClientController.java:91) [classes/:?]
+	at view.Main.payBillsShow(Main.java:66) [classes/:?]
+	at view.Main.main(Main.java:135) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+	at org.eclipse.persistence.queries.EntityResult.getValueFromRecord(EntityResult.java:162) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.buildObjectsFromRecords(ResultSetMappingQuery.java:269) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.buildObjectsFromRecords(ResultSetMappingQuery.java:238) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:587) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+2023-11-08 17:21:02,396 ERROR l.JPALogger [main] java.lang.IllegalArgumentException: No available cars for the requested model
+2023-11-08 17:21:02,404 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:21:28,583 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+jakarta.persistence.PersistenceException: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:603) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:561) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.payBill(ClientDAO.java:99) ~[classes/:?]
+	at model.Client.payBill(Client.java:79) ~[classes/:?]
+	at controller.ClientController.payClientBill(ClientController.java:91) [classes/:?]
+	at view.Main.payBillsShow(Main.java:66) [classes/:?]
+	at view.Main.main(Main.java:135) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+	at org.eclipse.persistence.queries.EntityResult.getValueFromRecord(EntityResult.java:162) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.buildObjectsFromRecords(ResultSetMappingQuery.java:269) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.buildObjectsFromRecords(ResultSetMappingQuery.java:238) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:587) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+2023-11-08 17:22:16,037 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:31:17,660 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.PersistenceException: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+jakarta.persistence.PersistenceException: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:603) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:561) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.ClientDAO.payBill(ClientDAO.java:99) ~[classes/:?]
+	at model.Client.payBill(Client.java:79) ~[classes/:?]
+	at controller.ClientController.payClientBill(ClientController.java:91) [classes/:?]
+	at view.Main.payBillsShow(Main.java:66) [classes/:?]
+	at view.Main.main(Main.java:135) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: @EntityResult: entityClass points to unknown entity: java.lang.String
+	at org.eclipse.persistence.queries.EntityResult.getValueFromRecord(EntityResult.java:162) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.buildObjectsFromRecords(ResultSetMappingQuery.java:269) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.queries.ResultSetMappingQuery.buildObjectsFromRecords(ResultSetMappingQuery.java:238) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.StoredProcedureQueryImpl.getResultList(StoredProcedureQueryImpl.java:587) ~[eclipselink-4.0.1.jar:4.0.1]
+	... 6 more
+2023-11-08 17:31:39,202 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:31:39,405 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.TransactionRequiredException: 
+Exception Description: No transaction is currently active
+jakarta.persistence.TransactionRequiredException: 
+Exception Description: No transaction is currently active
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionWrapper.throwCheckTransactionFailedException(EntityTransactionWrapper.java:93) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionWrapper.checkForTransaction(EntityTransactionWrapper.java:53) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.checkForTransaction(EntityManagerImpl.java:2170) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeUpdate(QueryImpl.java:296) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.releaseCarById(CarDAO.java:146) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:66) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:90) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 17:38:08,049 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:38:08,269 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.TransactionRequiredException: 
+Exception Description: No transaction is currently active
+jakarta.persistence.TransactionRequiredException: 
+Exception Description: No transaction is currently active
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionWrapper.throwCheckTransactionFailedException(EntityTransactionWrapper.java:93) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionWrapper.checkForTransaction(EntityTransactionWrapper.java:53) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.checkForTransaction(EntityManagerImpl.java:2170) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeUpdate(QueryImpl.java:296) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.releaseCarById(CarDAO.java:146) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:66) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:90) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 17:39:08,676 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:40:08,788 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.TransactionRequiredException: 
+Exception Description: No transaction is currently active
+jakarta.persistence.TransactionRequiredException: 
+Exception Description: No transaction is currently active
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionWrapper.throwCheckTransactionFailedException(EntityTransactionWrapper.java:93) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionWrapper.checkForTransaction(EntityTransactionWrapper.java:53) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.checkForTransaction(EntityManagerImpl.java:2170) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeUpdate(QueryImpl.java:296) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.releaseCarById(CarDAO.java:146) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:66) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:90) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 17:40:23,438 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:42:19,941 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.TransactionRequiredException: 
+Exception Description: No transaction is currently active
+jakarta.persistence.TransactionRequiredException: 
+Exception Description: No transaction is currently active
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionWrapper.throwCheckTransactionFailedException(EntityTransactionWrapper.java:93) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionWrapper.checkForTransaction(EntityTransactionWrapper.java:53) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.checkForTransaction(EntityManagerImpl.java:2170) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.executeUpdate(QueryImpl.java:296) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.releaseCarById(CarDAO.java:146) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:66) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:90) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 17:42:39,758 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:55:06,867 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 17:55:07,212 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 18:03:42,230 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 18:13:42,226 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 18:13:42,589 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 18:14:28,998 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 18:14:29,332 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-08 18:14:41,481 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-08 18:14:41,791 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-09 16:55:32,901 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-09 16:55:33,309 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-09 16:55:57,226 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-09 16:55:57,585 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-09 17:38:21,675 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-09 17:38:22,076 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-09 17:39:59,207 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-09 17:39:59,540 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-09 17:40:18,508 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-09 17:40:18,834 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-09 17:42:47,745 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-09 17:42:48,056 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-09 17:43:04,201 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-09 17:43:04,514 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-09 18:00:20,604 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-09 18:00:20,895 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-09 18:00:35,416 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-09 18:00:35,739 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-09 18:48:10,262 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-09 18:48:10,613 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]

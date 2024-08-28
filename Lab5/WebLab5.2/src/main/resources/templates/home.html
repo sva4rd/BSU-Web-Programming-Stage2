@@ -1,0 +1,27 @@
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="../../static/css/index_style.css" th:href="@{/css/index_style.css}"/>
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental App</title>
+</head>
+<body>
+<h1 class="index-title">Car Rental App</h1>
+<hr class="title-line">
+<div>
+    <p></p>
+    <p>
+        Welcome to the car rental app! A wide range of cars are available,
+        which you can rent a car for up to 30 days and return at any time. To rent, leave a request for a free car,
+        after it's processing by the administrator you will be invoiced, after payment of which
+        you will get access to the car. You can view the list of cars you have rented and return it by its ID.
+        Thank you for choosing our application.</p>
+</div>
+<div class="index-menu-container">
+    <h3>Menu</h3>
+    <ul class="index-list-container">
+        <li class="index-list-item"><a href="login.html" th:href="@{/login}">Sign in</a></li>
+        <li class="index-list-item"><a href="rent_car.html" th:href="@{/rent_car}">Rent a car</a></li>
+        <li class="index-list-item"><a href="rental_car_list.html" th:href="@{/rental_car_list}">Rental cars</a></li>
+    </ul>
+</div>
+</body>

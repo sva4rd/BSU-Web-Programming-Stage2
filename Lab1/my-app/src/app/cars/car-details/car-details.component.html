@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Car Details</h2>
+  <div *ngIf="car" class="card">
+    <div class="card-body">
+      <p class="card-title">ID: {{ car.id }}</p>
+      <p class="card-title">Model: {{ car.model }}</p>
+      <p class="card-title">State: {{ car.state }}</p>
+      <p class="card-title">Price: {{ car.price }}</p>
+
+    </div>
+  </div>
+  <div *ngIf="!car" class="alert alert-warning mt-3">
+    Warning: Unknown car selected.
+  </div>
+</div>

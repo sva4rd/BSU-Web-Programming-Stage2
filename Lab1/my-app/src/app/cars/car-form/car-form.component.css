@@ -1,0 +1,54 @@
+.form-container {
+
+  float: left;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+
+h3{
+  float: left;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.delete-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: flex-start;
+  float: left;
+}
+
+.field {
+  clear: both;
+  text-align: right;
+  line-height: 20px;
+  padding-right: 150px;
+  color: black;
+  font-size: 18px;
+}
+button.field {
+  font-size: 14px;
+  padding: 1px 12px;
+}
+button.field:disabled {
+  opacity: 0.5;
+}
+
+
+
+div {
+  padding-bottom: 10px;
+}
+
+label {
+  float: left;
+  padding-right: 10px;
+}
+

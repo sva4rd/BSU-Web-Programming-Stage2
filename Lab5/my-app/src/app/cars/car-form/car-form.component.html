@@ -1,0 +1,22 @@
+<div class="form-container">
+  <div class="form-border">
+  <h3>Car Form</h3>
+  <form  (ngSubmit)="onSubmit()" class="request-container">
+    <div class="input-container">
+    <h2>Add/edit a car info </h2>
+    <input type="number" id="id" name="id" [(ngModel)]="carId" placeholder="ID" required>
+    <input type="text" id="model" name="model" [(ngModel)]="carModel" placeholder="Model" required>
+    <input type="text" id="price" name="price" [(ngModel)]="carManufacturer" placeholder="Manufacturer" required>
+    <input type="text" id="state" name="state" [(ngModel)]="carState" placeholder="State" required>
+    </div>
+    <button type="submit" class="field" [disabled]="carId || (!carModel || !carState || !carManufacturer)">Add</button>
+    <button type="button" class="field" [disabled]="!carId || !carModel || !carState || !carManufacturer" (click)="onEdit()">Edit</button>
+
+    <div class="input-container">
+    <h2>Select the car to delete:</h2>
+    <input type="number" id="id" name="id" [(ngModel)]="selectedCarId" placeholder="ID">
+    </div>
+      <button class="field" type="button" [disabled]="!selectedCarId" (click)="onDelete()">Delete</button>
+  </form>
+  </div>
+</div>

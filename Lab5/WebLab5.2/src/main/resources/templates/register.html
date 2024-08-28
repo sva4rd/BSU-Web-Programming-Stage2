@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<link rel="stylesheet" type="text/css" href="../../static/css/register.css" th:href="@{/css/register.css}"/>
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental App</title>
+
+</head>
+<body>
+<div class="main-container" style="margin-top: 35px;">
+    <div class="form-container">
+        <div class="form-border">
+            <form action="/CarRentalApp/register_proc" method="POST" class="request-container">
+                <div class="input-container">
+                    <h2>Sign Up</h2>
+                    <input name="username" type="text" id="username" placeholder="Username"></br>
+                    <input name="password" type="password" id="password" placeholder="Password"></br>
+                    <input name="passportInput" type="text" id="passportData" placeholder="Passport Data">
+                </div>
+                <div>
+                    <input name="button" type="submit" class="submit-button" value="Sign up">
+                    <input name="button" type="button" class="cancel-button" value="Cancel"
+                           onclick="window.location.href='login.html'"
+                           th:attr="onclick=|window.location.href='@{/login}'|">
+                </div>
+                <p id="Result" th:text="${signUpResult}"></p>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

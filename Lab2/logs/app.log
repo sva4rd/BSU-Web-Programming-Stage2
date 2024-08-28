@@ -1,0 +1,98 @@
+2023-10-29 19:54:22,482 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:177) ~[bin/:?]
+	at model.Client.getRentCars(Client.java:27) ~[bin/:?]
+	at model.Client.releaseCar(Client.java:31) ~[bin/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [bin/:?]
+	at view.Main.releaseCarsShow(Main.java:96) [bin/:?]
+	at view.Main.main(Main.java:125) [bin/:?]
+2023-10-29 19:58:01,095 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving car failed, no car found
+java.sql.SQLException: Receiving car failed, no car found
+	at modelDAO.CarDAO.getCarById(CarDAO.java:108) ~[bin/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [bin/:?]
+	at view.Main.creatingRequestsShow(Main.java:35) [bin/:?]
+	at view.Main.main(Main.java:117) [bin/:?]
+2023-10-29 20:01:27,733 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving car failed, no car found
+java.sql.SQLException: Receiving car failed, no car found
+	at modelDAO.CarDAO.getCarById(CarDAO.java:108) ~[bin/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [bin/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [bin/:?]
+	at view.Main.main(Main.java:124) [bin/:?]
+2023-10-29 20:01:27,842 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:177) ~[bin/:?]
+	at model.Client.getRentCars(Client.java:27) ~[bin/:?]
+	at model.Client.releaseCar(Client.java:31) ~[bin/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [bin/:?]
+	at view.Main.releaseCarsShow(Main.java:99) [bin/:?]
+	at view.Main.main(Main.java:128) [bin/:?]
+2023-10-29 20:02:45,243 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving car failed, no car found
+java.sql.SQLException: Receiving car failed, no car found
+	at modelDAO.CarDAO.getCarById(CarDAO.java:108) ~[bin/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [bin/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [bin/:?]
+	at view.Main.main(Main.java:124) [bin/:?]
+2023-10-29 20:02:45,356 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:177) ~[bin/:?]
+	at model.Client.getRentCars(Client.java:27) ~[bin/:?]
+	at model.Client.releaseCar(Client.java:31) ~[bin/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [bin/:?]
+	at view.Main.releaseCarsShow(Main.java:99) [bin/:?]
+	at view.Main.main(Main.java:128) [bin/:?]
+2023-11-02 17:36:29,584 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving car failed, no car found
+java.sql.SQLException: Receiving car failed, no car found
+	at modelDAO.CarDAO.getCarById(CarDAO.java:108) ~[bin/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [bin/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [bin/:?]
+	at view.Main.main(Main.java:124) [bin/:?]
+2023-11-02 17:36:29,883 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:177) ~[bin/:?]
+	at model.Client.getRentCars(Client.java:27) ~[bin/:?]
+	at model.Client.releaseCar(Client.java:31) ~[bin/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [bin/:?]
+	at view.Main.releaseCarsShow(Main.java:99) [bin/:?]
+	at view.Main.main(Main.java:128) [bin/:?]
+2023-11-02 17:38:27,070 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving car failed, no car found
+java.sql.SQLException: Receiving car failed, no car found
+	at modelDAO.CarDAO.getCarById(CarDAO.java:108) ~[bin/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [bin/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [bin/:?]
+	at view.Main.main(Main.java:124) [bin/:?]
+2023-11-02 17:38:27,319 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:177) ~[bin/:?]
+	at model.Client.getRentCars(Client.java:27) ~[bin/:?]
+	at model.Client.releaseCar(Client.java:31) ~[bin/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [bin/:?]
+	at view.Main.releaseCarsShow(Main.java:99) [bin/:?]
+	at view.Main.main(Main.java:128) [bin/:?]
+2023-11-02 17:39:04,190 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving car failed, no car found
+java.sql.SQLException: Receiving car failed, no car found
+	at modelDAO.CarDAO.getCarById(CarDAO.java:108) ~[bin/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [bin/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [bin/:?]
+	at view.Main.main(Main.java:124) [bin/:?]
+2023-11-02 17:39:04,441 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:177) ~[bin/:?]
+	at model.Client.getRentCars(Client.java:27) ~[bin/:?]
+	at model.Client.releaseCar(Client.java:31) ~[bin/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [bin/:?]
+	at view.Main.releaseCarsShow(Main.java:99) [bin/:?]
+	at view.Main.main(Main.java:128) [bin/:?]
+2023-11-02 17:49:32,834 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving car failed, no car found
+java.sql.SQLException: Receiving car failed, no car found
+	at modelDAO.CarDAO.getCarById(CarDAO.java:108) ~[bin/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [bin/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [bin/:?]
+	at view.Main.main(Main.java:124) [bin/:?]
+2023-11-02 17:49:32,972 ERROR c.ClientController [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:177) ~[bin/:?]
+	at model.Client.getRentCars(Client.java:27) ~[bin/:?]
+	at model.Client.releaseCar(Client.java:31) ~[bin/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [bin/:?]
+	at view.Main.releaseCarsShow(Main.java:99) [bin/:?]
+	at view.Main.main(Main.java:128) [bin/:?]

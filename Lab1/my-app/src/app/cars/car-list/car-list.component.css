@@ -1,0 +1,37 @@
+.container {
+  margin-top: 30px;
+}
+
+h2 {
+  //color: var(--primary-color);
+}
+
+ul.list-group {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+ul.list-group {
+  list-style-type: none; /* Убирает маркеры списка */
+  padding: 0; /* Убирает отступы */
+  width: 30%; /* Задает ширину списка, растягивая его не на весь экран */
+  margin-left: 0; /* Прижимает список к левому краю экрана */
+}
+
+ul.list-group li.list-group-item {
+  font-size: 18px; /* Увеличивает размер текста */
+  color: #000000; /* Задает черный цвет текста */
+  border: 1px solid #000000; /* Добавляет рамку вокруг каждого элемента списка */
+  border-radius: 10px; /* Делает края рамки более скругленными */
+  padding: 10px; /* Добавляет отступы вокруг текста внутри каждого элемента списка */
+  margin-bottom: 10px; /* Добавляет отступ между элементами списка */
+}
+

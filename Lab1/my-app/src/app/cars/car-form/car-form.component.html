@@ -1,0 +1,34 @@
+<div class="container form-container">
+  <h3>Car Form</h3>
+  <form  (ngSubmit)="onSubmit()">
+    <div class="field"><label>Add/edit a car info </label></div>
+    <div class="field">
+      <label for="id">ID:</label>
+      <input type="number" id="id" name="id" [(ngModel)]="carId" required>
+    </div>
+    <div class="field">
+      <label for="model">Model:</label>
+      <input type="text" id="model" name="model" [(ngModel)]="carModel" required>
+    </div>
+    <div class="field">
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" [(ngModel)]="carState" required>
+    </div>
+    <div class="field">
+      <label for="price">Price:</label>
+      <input type="text" id="price" name="price" [(ngModel)]="carPrice" required>
+    </div>
+    <div class="field">
+      <button type="submit" class="field" [disabled]="carId || (!carModel || !carState || !carPrice)">Add</button>
+      <button type="button" class="field" [disabled]="!carId || !carModel || !carState || !carPrice" (click)="onEdit()">Edit</button>
+    </div>
+    <div class="field"><label>Select the car to delete:</label></div>
+    <div class="field">
+      <label for="id">ID:</label>
+      <input type="number" id="id" name="id" [(ngModel)]="selectedCarId">
+    </div>
+    <div class="field">
+      <button class="field" type="button" [disabled]="!selectedCarId" (click)="onDelete()">Delete</button>
+    </div>
+  </form>
+</div>

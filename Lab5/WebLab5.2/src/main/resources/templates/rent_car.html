@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<link rel="stylesheet" type="text/css" href="../../static/css/style.css" th:href="@{/css/style.css}"/>
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental App</title>
+
+</head>
+<body>
+<p class="back-ref">
+    <a href="home.html" th:href="@{/}">Back</a>
+</p>
+<div class="main-container">
+    <div class="menu-container">
+        <h1>List of Cars</h1>
+        <ul class="list-container">
+                <li th:each="car : ${carList}" class="list-item">
+                <span th:text="${car.manufacturer + ' ' + car.model}"></span>
+                <span th:text="${'ID: ' + car.getID() + ' - ' + 'State: ' + car.getState()}"></span>
+            </li>
+        </ul>
+
+        <div th:if="${#lists.isEmpty(carList)}" class="err-message">
+            <p>Error: no cars found</p>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="form-border">
+            <form action="/CarRentalApp/request_proc" method="POST" class="request-container">
+                <div class="input-container">
+                    <h2>Rent a car</h2>
+                    <input name="carIdInput" type="number" id="carId" placeholder="Car ID" min="1" th:disabled="${notAuthorized || emptyAvailableCarList}"></br>
+                    <input name="rentDaysInput" type="number" id="rentDays" placeholder="Rent Days" min="1" th:disabled="${notAuthorized || emptyAvailableCarList}">
+                </div>
+               <input type="submit" class="submit-button" value="Create Request" th:disabled="${notAuthorized || emptyAvailableCarList}">
+                <p id="requestResult" th:text="${requestResult}"></p>
+            </form>
+            <form action="/CarRentalApp/bill_proc" method="POST" class="bill-container">
+                <div class="bill-input">
+                    <div class="current-id">
+                        <p>Bill ID:</p>
+                        <input type="hidden" name="payBillAction" value="payBillAction">
+                        <p id="billID" th:text="${billId}">-</p>
+                    </div>
+                    <input type="submit" id="payBillButton" class="submit-button" th:disabled="${billButtonDisabled}" value="Pay Bill">
+                </div>
+                <p id="billResult" th:text="${billResult}"></p>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

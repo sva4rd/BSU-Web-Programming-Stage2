@@ -1,0 +1,286 @@
+2023-11-11 15:01:28,022 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-11 15:01:28,433 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-11 15:02:58,662 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:45) [classes/:?]
+	at view.Main.main(Main.java:133) [classes/:?]
+2023-11-11 15:02:59,160 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:108) [classes/:?]
+	at view.Main.main(Main.java:137) [classes/:?]
+2023-11-12 14:29:50,049 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:545) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:71) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-12 14:29:50,452 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:125) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:58) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:62) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:107) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+2023-11-12 15:16:46,252 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-12 15:16:46,656 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:107) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+2023-11-12 15:46:37,212 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-12 15:46:37,604 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:107) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+2023-11-12 15:47:25,543 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-12 15:47:25,897 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:107) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+2023-11-12 15:48:21,477 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-12 15:48:52,732 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-12 15:48:53,123 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:107) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+2023-11-12 15:49:35,736 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-12 15:49:36,059 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:107) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+2023-11-12 15:49:51,258 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-12 15:49:51,571 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:107) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+2023-11-12 15:50:11,440 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-12 15:50:11,764 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:107) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+2023-11-12 15:50:45,607 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:44) [classes/:?]
+	at view.Main.main(Main.java:132) [classes/:?]
+2023-11-12 15:50:45,943 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:107) [classes/:?]
+	at view.Main.main(Main.java:136) [classes/:?]
+2023-11-13 15:17:43,315 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:43) [classes/:?]
+	at view.Main.main(Main.java:112) [classes/:?]
+2023-11-13 15:17:43,659 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarFunc(Main.java:79) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:91) [classes/:?]
+	at view.Main.main(Main.java:116) [classes/:?]
+2023-11-13 15:24:48,259 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:46) [classes/:?]
+	at view.Main.main(Main.java:115) [classes/:?]
+2023-11-13 15:24:48,564 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarFunc(Main.java:82) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:94) [classes/:?]
+	at view.Main.main(Main.java:119) [classes/:?]
+2023-11-13 15:28:47,836 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:48) [classes/:?]
+	at view.Main.main(Main.java:117) [classes/:?]
+2023-11-13 15:28:48,122 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarFunc(Main.java:84) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:96) [classes/:?]
+	at view.Main.main(Main.java:121) [classes/:?]
+2023-11-16 17:53:18,670 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:48) [classes/:?]
+	at view.Main.main(Main.java:117) [classes/:?]
+2023-11-16 17:53:18,908 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarFunc(Main.java:84) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:96) [classes/:?]
+	at view.Main.main(Main.java:121) [classes/:?]
+2023-11-16 17:56:48,656 ERROR l.JPALogger [main] modelDAO.DAOException: jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+jakarta.persistence.NoResultException: getSingleResult() did not retrieve any entities.
+	at org.eclipse.persistence.internal.jpa.QueryImpl.throwNoResultException(QueryImpl.java:980) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.QueryImpl.getSingleResult(QueryImpl.java:536) ~[eclipselink-4.0.1.jar:4.0.1]
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.getSingleResult(EJBQueryImpl.java:400) ~[eclipselink-4.0.1.jar:4.0.1]
+	at modelDAO.CarDAO.getCarById(CarDAO.java:88) ~[classes/:?]
+	at controller.ClientController.createClientRequest(ClientController.java:72) [classes/:?]
+	at view.Main.creatingRequestsShow(Main.java:48) [classes/:?]
+	at view.Main.main(Main.java:117) [classes/:?]
+2023-11-16 17:56:48,954 ERROR l.JPALogger [main] modelDAO.DAOException: java.sql.SQLException: Receiving cars failed, no cars found
+java.sql.SQLException: Receiving cars failed, no cars found
+	at modelDAO.CarDAO.getCarsForClient(CarDAO.java:142) ~[classes/:?]
+	at model.Client.getRentCars(Client.java:48) ~[classes/:?]
+	at model.Client.releaseCar(Client.java:52) ~[classes/:?]
+	at controller.ClientController.realeseClientCar(ClientController.java:46) [classes/:?]
+	at view.Main.releaseCarFunc(Main.java:84) [classes/:?]
+	at view.Main.releaseCarsShow(Main.java:96) [classes/:?]
+	at view.Main.main(Main.java:121) [classes/:?]

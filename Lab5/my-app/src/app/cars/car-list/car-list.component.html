@@ -1,0 +1,12 @@
+<div class="menu-container">
+  <h1>Car List</h1>
+  <ul class="list-container">
+    <li
+      class="list-item"
+      *ngFor="let car of cars$"
+      (click)="showCarDetails(car)"
+    >
+      <span> ID {{ car.id }}: {{ car.manufacturer }} {{ car.model }}</span>
+    </li>
+  </ul>
+</div>

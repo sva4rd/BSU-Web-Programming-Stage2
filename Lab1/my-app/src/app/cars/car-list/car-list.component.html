@@ -1,0 +1,12 @@
+<div class="container">
+  <h2 class="mt-5 mb-3">Car List</h2>
+  <ul class="list-group">
+    <li
+      class="list-group-item"
+      *ngFor="let car of cars$ | async"
+      (click)="showCarDetails(car)"
+    >
+      {{ car.model }}
+    </li>
+  </ul>
+</div>
